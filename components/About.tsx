@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { assetPath } from '@/lib/basePath'
 
 export default function About() {
   return (
@@ -30,7 +31,7 @@ export default function About() {
               <div className="relative bg-gray-200 rounded-2xl p-2 shadow-2xl">
                 <div className="aspect-square rounded-xl relative overflow-hidden">
                   <Image 
-                    src="/resmim.jpg" 
+                    src={assetPath('/resmim.jpg')} 
                     alt="Arda Taşkın" 
                     fill 
                     className="rounded-xl object-cover" 

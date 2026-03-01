@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { assetPath } from '@/lib/basePath'
 
 export default function VolunteerWork() {
   const volunteerWorks = [
@@ -38,7 +39,7 @@ export default function VolunteerWork() {
                 <div className="flex items-center gap-4 w-full">
                   <div className="relative w-20 h-20 flex-shrink-0">
                     <Image
-                      src={work.logo}
+                      src={assetPath(work.logo)}
                       alt={work.title}
                       fill
                       className="object-contain"

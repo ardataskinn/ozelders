@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { assetPath } from '@/lib/basePath'
 
 const PROJECT_IMAGE_SIZE = 80
 
@@ -9,7 +10,7 @@ export default function Projects() {
       description: 'Lise dönemimde soru yazarlığı yaptım başta kendi oluşturduğum bir platformun websitesi içinde yayınlıyordum sorularımı youtube üzerinden de çözümlerini yapıyordum daha sonrasında bir öğretmenim vasıtası ile bazı büyük yayınevlerinde sorularım basıldı ve bir dönem soru yazarı bir hocamla sorular ürettik ve onun ürettiklerini düzeltme gözden geçirme işini üstlendim, aynı zamanda lise seviyesi yazılılar hazırlayıp dizgileyip bunları ücretsiz olarak paylaştım birçok okulda kullanıldılar.',
       tags: [] as string[],
       icon: '✍️',
-      image: '/paper.png',
+      image: assetPath('/paper.png'),
       showButton: true,
       exampleLink: 'https://darajaokullari.blogspot.com/?m=1',
       hideTags: true,
@@ -19,7 +20,7 @@ export default function Projects() {
       description: 'Deprem sonrası dönemde ücretsiz olarak dersler hazırlayıp bunları Youtube üzerinden paylaştım kendim de bizzat aynı dönemde sınav öğrencisi olduğum için kendi üzerimden doğru ve etkili öğretim methotları üzerine çıkarımlar yapma fırsatı buldum ve pratiğin öğrenmede en büyük etkiye sahip olduğunu gözlemlememle birlikte bunu kullanarak hazırladığım materyaller ve verdiğim derslerle birçok öğrenciye fayda sağladım ve çok sayıda geri dönüş aldım.',
       tags: ['Eğitim', 'YouTube', 'Ücretsiz İçerik'],
       icon: '🎓',
-      image: '/IMG_2755.png',
+      image: assetPath('/IMG_2755.png'),
       showButtons: true,
       buttons: [
         { text: 'Platformun Web Sitesi', color: 'primary', link: '#' },
@@ -31,7 +32,7 @@ export default function Projects() {
       description: 'YKS, LGS ve MSÜ için birçok konuyu ele alıp öğrencileri bilgilendirdiğim bir video serisi başlattım ve yaklaşık 50.000 izlenmeyle birçok insana bu deneyimleri aktardım ve hala aktif olarak geri dönüşler almaktayım',
       tags: ['Video', 'Eğitim', 'Tavsiye'],
       icon: '🎥',
-      image: '/Youtube_logo.png',
+      image: assetPath('/Youtube_logo.png'),
       highlightNumber: '50.000',
     },
     {
@@ -39,7 +40,7 @@ export default function Projects() {
       description: 'Sınav koçluğu ve mentorluk benim için titizlikle ele alınması gerekilen bir mevzu çünkü yanlış yönlendirme ve yaklaşım öğrencinin mental sağlığına ve akademik gidişatına büyük hasarlar verebilir. Öte yandan bugün çok sayıda "koçluk" verdiğini iddia eden insan var, başarılı bir öğrenci başarılı bir mentor,koç olmayabilir bu yüzden sınav sonucu iyi olması bir yana kişinin iletişim becerilerine ve meselenin bazı teknik yanlarına da hakimliğinin göz ardı edilmeden karar verilmesi gereklidir. Liseden beri alan seçimi, sınava nasıl çalışmalı veya tükenmişlikle nasıl başa çıkılır, ve motivasyon teknikleri gibi birçok konuda deneyimler kazandım ve birçok öğrencinin hayatına pozitif anlamda dokunma şansı elde ettim.',
       tags: ['Koçluk', 'Mentorluk', 'Sınav Hazırlığı'],
       icon: '🤝',
-      image: '/mentoring.png',
+      image: assetPath('/mentoring.png'),
       showButton: false,
     },
   ]
