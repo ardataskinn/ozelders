@@ -36,6 +36,21 @@ npm run dev
 - İletişim bilgilerinizi `/components/Achievements.tsx` dosyasında güncelleyin
 - İstatistikleri ve başarıları kendi verilerinize göre düzenleyin
 
+## GitHub Pages’e Yayınlama
+
+1. Bu projeyi kendi GitHub hesabında yeni bir repo olarak oluştur ve kodu push et.
+2. Repo **Settings** → **Pages** → **Build and deployment** bölümünde **Source** olarak **GitHub Actions** seç.
+3. `main` branch’e her push’ta site otomatik build alır ve yayınlanır. İlk seferde **Actions** sekmesinden “Deploy to GitHub Pages” workflow’unu manuel çalıştırabilirsin.
+4. Site adresi: `https://[kullanici-adin].github.io/[repo-adi]/`  
+   Örnek: `https://ardataskin.github.io/arda-taskin-portfolio/`
+
+**Yerelde test:** GitHub’daki gibi alt dizinde çalıştırmak için:
+```bash
+BASE_PATH=/repo-adin npm run build
+npx serve out
+```
+Ardından tarayıcıda `http://localhost:3000/repo-adin/` adresine git.
+
 ## Teknolojiler
 
 - Next.js 14
